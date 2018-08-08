@@ -96,7 +96,7 @@ function Person(name, lname) {
         this.student.push(pupil)
     }
     this.addTeacher = function(faculty){
-        this.student.push(faculty)
+        this.teacher.push(faculty) 
     }
 }
 
@@ -104,8 +104,7 @@ var PhiladelphiaSchool = new School() //make a new school
 PhiladelphiaSchool.addStudent(new Student("john","smith", 10)) //add a student to the school
 PhiladelphiaSchool.addTeacher(new Teacher("Jayne", "Borras", "$50K")) //add a teacher to the school
 //console.log(PhiladelphiaSchool.teacher) gives you teacher in the school.
-//console.log(Philadelphia.Student) gives you the students in the school.
-
+//console.log(PhiladelphiaSchool.student) gives you the students in the school.
 
   
 
